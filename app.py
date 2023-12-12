@@ -19,7 +19,7 @@ for question, answer in questoes.items():
     if user_answer.lower() == answer.lower():
         acertos += 1
         st.write("Resposta correta!")
-   else:
+    else:
         erros += 1
         st.write("Resposta errada. A resposta correta é:", answer)
 
