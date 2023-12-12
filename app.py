@@ -17,11 +17,14 @@ erros = 0
 
 for question, answer in questoes.items():
     user_answer = st.text_input(question)
-    if user_answer.lower() == answer.lower():
+
+    if user_answer.strip() == "":
+        st.warning("Por favor, forneça uma resposta antes de continuar.")
+    elif user_answer.lower() == answer.lower():
         acertos += 1
         st.write("Resposta correta!")
-else:
-      erros += 1
-      st.write("Resposta errada. A resposta correta é:", answer)
+    else:
+        erros += 1
+        st.write("Resposta errada. A resposta correta é:", answer)
 
 st.write(f"Você acertou {acertos} charadas e errou {erros} charadas.")
