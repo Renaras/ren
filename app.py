@@ -6,6 +6,7 @@ questoes={"Eu sou seu irmão, mas você não é meu irmão. Como isso é possív
           "Se o dia anterior a ontem é 21, que dia será que vem depois de amanhã?": "25",
           "O que sobe uma chaminé para baixo, mas não desce uma chaminé para cima?": "Um guarda-chuva",
           "O que pode corree, mas nunca anda?": "O rio"}
+ 
 
 st.title("Jogo de Charadas")
 st.write("Adivinhe as respostas das charadas!")
